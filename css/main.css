@@ -154,12 +154,15 @@ header nav ul {
   flex-flow: row wrap;
   justify-content: space-between;
   width: 100%;
+  margin-top: 1rem;
+  
 }
 
 nav ul li a {
   display: flex;
   justify-content: space-evenly;
   margin-left: 1.25rem;
+  color: var(--black);
 }
 
 a:hover {
