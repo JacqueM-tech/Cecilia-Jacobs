@@ -143,24 +143,26 @@ header .container {
 }
 
 .logo {
-  width: 350px;
-  height: 350px;
+  width: 250px;
+  height: 250px;
+  margin-bottom: -3rem;
 }
 
 header nav ul {
   font-weight: 600;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-evenly;
+  flex-flow: row wrap;
+  justify-content: space-between;
   width: 100%;
 }
 
 nav ul li a {
   display: flex;
   justify-content: space-evenly;
+  margin-left: 1.25rem;
 }
 
-nav:hover {
+a:hover {
   color: Var(--aqua);
 }
 
@@ -179,11 +181,11 @@ nav:hover {
 
 .para2 {
   width: 55%;
+  margin-top: -.5rem;
 }
 
 .para3 {
-  display: flex;
-
+  margin-top: -.5rem;
 }
 
 .fas {
