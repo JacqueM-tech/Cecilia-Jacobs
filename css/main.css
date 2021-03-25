@@ -142,12 +142,6 @@ header .container {
   align-items: center;
 }
 
-.logo {
-  width: 250px;
-  height: 250px;
-  margin-bottom: -3rem;
-}
-
 header nav ul {
   font-weight: 600;
   display: flex;
@@ -167,6 +161,13 @@ nav ul li a {
 
 a:hover {
   color: Var(--aqua);
+}
+
+.logo {
+  width: 250px;
+  height: 250px;
+  margin-bottom: -3rem;
+  background-image: url('../img/bg-pattern-top.svg');
 }
 
 .container .para {
@@ -191,16 +192,50 @@ a:hover {
   margin-top: -.5rem;
 }
 
-.fas {
-  font-size: 20px;
+.fas, .fab {
+  font-size: 25px;
   margin: 6px;
   color: var(--aqua);
 }
 
+video {
+  margin-left: 2rem;
+  width: 360px;
+  height: 260px;
+}
+
+/* ---------------- About ---------------- */
+
+#about .container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  color: var(--black);
+  font-weight: 700;
+}
+
+.about-para p {
+  width: 90%;
+  margin-left: 2rem;
+  
+}
+
+.about-photo {
+  display: flex;
+  width: 225px;
+  height: 225px;
+  margin-left: 5rem;
+
+}
 
 
-
-
+/* ---------------- Footer---------------- */
 footer .container {
   display: flex;
   flex-flow: row wrap;
