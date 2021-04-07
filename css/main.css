@@ -149,7 +149,6 @@ header nav ul {
   justify-content: space-between;
   width: 100%;
   margin-top: 1rem;
-  
 }
 
 nav ul li a {
@@ -204,8 +203,33 @@ video {
   height: 260px;
 }
 
-/* ---------------- About ---------------- */
+/* ============================== SERVICES ============================ */
+.services {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
 
+.services h2 {
+  margin-top: 3rem;
+}
+
+
+
+/* ============================ TESTIMONIALS =========================== */
+.testimonials h2 {
+  margin-top: 3rem;
+}
+
+
+/* ============================ SERVICE-AREA =========================== */
+.service-area h2 {
+  margin-top: 3rem;
+}
+
+
+/* ================================ ABOUT ============================= */
 #about .container {
   display: flex;
   flex-flow: column wrap;
@@ -218,6 +242,7 @@ h2 {
   justify-content: center;
   color: var(--black);
   font-weight: 700;
+  margin-top: 3rem;
 }
 
 .about-para p {
@@ -233,7 +258,6 @@ h2 {
   margin-left: 5rem;
 
 }
-
 
 /* ---------------- Footer---------------- */
 footer .container {
@@ -251,16 +275,6 @@ footer .container {
   align-items: center;
   width: 100%;
 } 
-
-
-
-
-
-/* ==========================================================================
-Services Page
-========================================================================== */
-
-
 
 /* ==========================================================================
    Helper classes
