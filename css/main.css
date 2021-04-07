@@ -209,10 +209,22 @@ video {
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-}
+  }
 
 .services h2 {
-  margin-top: 3rem;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 10rem;
+  border: 5px solid #76dad7;
+  background-color: var(--grey);
+}
+
+.service-list {
+  width: 15rem;
+  height: 20rem;
+  border: 5px solid #76dad7;
+  background-color: var(--grey);
 }
 
 
@@ -222,10 +234,26 @@ video {
   margin-top: 3rem;
 }
 
+.test-info {
+  width: 15rem;
+  height: 20rem;
+  border: 5px solid #76dad7;
+  background-color: var(--grey);
+}
+
 
 /* ============================ SERVICE-AREA =========================== */
+
 .service-area h2 {
   margin-top: 3rem;
+}
+
+.cities {
+  width: 15rem;
+  height: 20rem;
+  border: 5px solid #76dad7;
+  background-color: var(--grey);
+
 }
 
 
@@ -262,10 +290,10 @@ h2 {
 /* ---------------- Footer---------------- */
 footer .container {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 
 .footer-content {
@@ -275,6 +303,10 @@ footer .container {
   align-items: center;
   width: 100%;
 } 
+
+.footer-content h6 {
+  margin-top: 1rem;
+}
 
 /* ==========================================================================
    Helper classes
