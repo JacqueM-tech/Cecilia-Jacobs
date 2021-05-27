@@ -129,18 +129,16 @@ img {
  margin: 0;
 }
 
-.top a {
-justify-content: center;
-background-color:  hex#76dad7;
-}
-
 /* ---------------- Mobile Styles ---------------- */
 header .container {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-}
+ }
+.header-logo {
+  width: 210px;
+  height: 52px;
 /* Responsive Navigation Bar */
 .topnav {
   overflow: hidden;
@@ -219,58 +217,36 @@ nav ul li a {
 a:hover {
   color: Var(--aqua);
 }*/
-.header-logo {
-  width: 210px;
-  height: 100px;
-  margin: 0 50% -15% 0;
 
 }
+.logo-container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.logo-image img {
+  width: 180px;
+  height: 180px;
+}
+.message {
+  width: 70%;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.375rem;
+  opacity: 59%;
+  font: italic normal bold 22px/26px Raleway;
+  line-height: 26px;
+  color: #100b00;
+}
+
 h1 {
   border: 1px solid #707070;
   width: 375px;
   height: 77px;
   background-color: #707070;
 }
-.scroll-up-btn{
-  right: 45px;
-  bottom: 15px;
-  height: 38px;
-  width: 35px;
-  font-size: 23px;
-  line-height: 38px;
-}
-.scroll-up-btn{
-  position: fixed;
-  height: 45px;
-  width: 42px;
-  background: rgb(20, 180, 220);
-  right: 30px;
-  bottom: 10px;
-  text-align: center;
-  line-height: 45px;
-  color: #fff;
-  z-index: 9999;
-  font-size: 30px;
-  border-radius: 6px;
-  border-bottom-width: 2px;
-  cursor: pointer;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.3s ease;
-}
-.scroll-up-btn.show{
-  bottom: 30px;
-  opacity: 1;
-  pointer-events: auto;
-}
-.scroll-up-btn:hover{
-  filter: brightness(90%);
-}
-.logo img {
-  width: 180px;
-  height: 180px;
-  margin: 10px 0 0 80px;
-}
+
 .menu-btn{
   color: #fff;
   font-size: 23px;
@@ -285,37 +261,12 @@ h1 {
   font-size: 1rem;
 }
 
-.para1 {
-  width: 70%;
-  text-align: center;
-  font-style: italic;
-  font-size: 1.375rem;
-  opacity: 59%;
-  font: italic normal bold 22px/26px Raleway;
 
-  line-height: 26px;
-  color: #100b00;
-}
-
-.para2 {
-  width: 55%;
-  margin-top: -.5rem;
-}
-
-.para3 {
-  margin-top: -.5rem;
-}
-
-.fas, .fab {
-  font-size: 25px;
-  margin: 6px;
-  color: var(--aqua);
-}
 
 video {
   margin-left: 2rem;
-  width: 360px;
-  height: 260px;
+  width: 200px;
+  height: 200px;
 }
 
 /* ============================== SERVICES ============================ */
