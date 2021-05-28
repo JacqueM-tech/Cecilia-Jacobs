@@ -88,6 +88,7 @@ textarea {
    ========================================================================== */
 
 /* General Styles */
+/* VARIABLES */
 :root {
   font-size: 16px;
   --aqua: #76dad7;
@@ -96,10 +97,11 @@ textarea {
   --black: #100b00;
   --white: #fff;
 }
+/* RESET */
 * {
   margin:0;
   padding:0;
-  list-style:none;
+  text-decoration: none;
 }
 body {
   background-color: var(--white);
@@ -111,9 +113,6 @@ ul,
 ol {
  list-style-type: none;
 }
-a {
-text-decoration: none;
-}
 p {
  line-height: 1.5rem;
 }
@@ -124,9 +123,23 @@ img {
  width: 100%;
  margin: 0;
 }
+.button {
+  background: none;
+  border: 3px solid var(--aqua);
+  color: var(--dark-grey);
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.6);
+}
+.button:hover {
+  color: #222;
+  background: var(--aqua);
+}
+
 
 /* ---------------- Mobile Styles ---------------- */
-/*===============Header Styles===================*/
+/*===============Header ================*/
 header .container {
   display: flex;
   flex-flow: row nowrap;
@@ -216,13 +229,13 @@ a:hover {
 }*/
 
 }
-.logo-container {
+#logo-message {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
 }
-.logo-image {
+.image {
   width: 180px;
   height: 180px;
 }
@@ -451,40 +464,47 @@ footer .container {
    Modify as content requires.
    ========================================================================== */
 
-/* --------------------- Tablet Styles - Homepage -------------------- */
-
-@media only screen and (min-width: 768px) {
-  /* Tablet styles here */ 
-
+/* ------------- SMALL TABLET STYLES------------ */
+@media only screen and (min-width: 620px) {
 /* General Styles */
 
  
 /* Header Styles */
  
 
-  /* ==========================================================================
-  Services Page
-  ========================================================================== */
+  /* =======================================
+  TESTIMONIAL Page
+  ========================================= */
   
 
 }
  
+/*===== LARGE TABLETS & LAPTOP STYLES =====*/
+@media screen and (min-width: 960px){
+ /* Header Styles */
+ 
 
-/* --------------------- Desktop Styles - Homepage -------------------- */
-
-  @media only screen and (min-width: 1200px) {
-     /* Desktop styles here */
-   
-     /* General Styles */ 
-
-
-
-/* ==========================================================================
-  Services Page
-  ========================================================================== */
+/* =======================================
+  TESTIMONIAL Page
+  ========================================= */
   
+}
+
+/* -------------- Desktop Styles --------------- */
+@media only screen and (min-width: 1200px) {
+
+  /* Header Styles */
+ 
+
+  /* =======================================
+  TESTIMONIAL Page
+  ========================================= */
+
 
 }
+   
+
+
 
 
 @media print,
