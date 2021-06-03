@@ -137,25 +137,20 @@ img {
   background: var(--aqua);
 }
 
-
 /* ---------------- Mobile Styles ---------------- */
 /*===============Header ================*/
-header .container {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
- }
-.header-logo {
-  width: 310px;
-  height: 92px;
+/* .header-logo {
+  width: 300px;
+  height: 100px;
+  margin: 40px 0 60px 0;
+} */
 /* Responsive Navigation Bar */
-.topnav {
+/* .topnav {
   overflow: hidden;
   display:flex;
   flex-flow:row wrap;
   margin: -25% 0 0 80%;
-}
+} */
 .topnav a {
   float: left;
   display: block;
@@ -202,33 +197,6 @@ header .container {
     width: 100%;
     text-align: left;
   }
-}
-@media(min-width:768px){
-  .active {
-   background-color:#a8a6b7;
-  }
-
-
-/*header nav ul {
-  font-weight: 600;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  width: 100%;
-  margin-top: 1rem;
-}
-
-nav ul li a {
-  display: flex;
-  justify-content: space-evenly;
-  margin-left: 1rem;
-  color: var(--black);
-}
-a:hover {
-  color: Var(--aqua);
-}*/
-
-}
 #logo-message {
   display: flex;
   flex-flow: column wrap;
@@ -236,92 +204,68 @@ a:hover {
   align-items: center;
 }
 .image {
-  width: 180px;
-  height: 180px;
+  margin-top: 100px;
+  width: 300px;
+  height: 300px;
 }
-.message {
-  width: 70%;
-  text-align: center;
+.message p {
   font-style: italic;
-  font-size: 1.375rem;
+  font-size: 2rem;
+  line-height: 1.5;
+  text-align: center;
   opacity: 59%;
-  font: italic bold 22px/26px;
-  color: #100b00;
+  font-weight: 900;
+  margin-top: 10px;
+  margin-bottom: 65px;
+}
+#logo-message .para {
+  text-align: center;
+  font-size: 1.25rem;
+  background-color: var(--aqua);
+  color: var(--white);
+  margin-top: 30px;
+  width: 100%;
+  padding: 20px 20px;
+  margin-bottom: 40px;
 }
 
-h1 {
-  border: 1px solid #707070;
-  width: 375px;
+/* ==================== SERVICES ================ */
+.services h1 {
+  color: var(--white);
+  width: 100%;
   height: 77px;
   background-color: #707070;
+  margin: 10px 0 40px 0;
+  padding-top: 20px;
+}
+.services-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin: 30px 0;
+  text-align: center; 
 }
 
-.menu-btn{
-  color: #fff;
-  font-size: 23px;
-  cursor: pointer;
-  display: none;
+
+video {
+  width: 100%;
+  margin-bottom: 40px;
 }
-.container .para {
+
+/* ============================ TESTIMONIALS =========================== */
+#testimonial {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  font-size: 1rem;
 }
-video {
-  width: 200px;
-  height: 200px;
-}
-/* ==================== SERVICES ================ */
-.services {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  }
-
-.services h2 {
-  justify-content: space-between;
-  align-items: center;
-  height: 3rem;
-  width: 10rem;
-  border: 5px solid #76dad7;
-  background-color: var(--grey);
+#testimonial .button {
+  margin-bottom: 50px;
 }
 
-.services-list p {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-evenly;
-}
-
-
-/* ============================ TESTIMONIALS =========================== */
-.testimonials h2 {
-  margin-top: 3rem;
-}
-
-.test-info {
-  width: 15rem;
-  height: 20rem;
-  border: 5px solid #76dad7;
-  background-color: var(--grey);
-}
-
-
-/* ============================ SERVICE-AREA =========================== */
-
-.service-area h2 {
-  margin-top: 3rem;
-}
-
-.cities {
-  width: 15rem;
-  height: 20rem;
-  border: 5px solid #76dad7;
-  background-color: var(--grey);
-
+.testimonials .button, a {
+  color: #000;
+  font-weight: bold;
 }
 
 
@@ -331,29 +275,39 @@ video {
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
+  background-color: var(--aqua);
+  width: 100%;
 }
-
 h2 {
-  display: flex;
-  justify-content: center;
-  color: var(--black);
+  color: var(--white);
   font-weight: 700;
-  margin-top: 3rem;
+  margin: 2rem 0;
 }
-
+.about-photo {
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 260px;
+  margin-bottom: 1rem;
+}
 .about-para p {
   width: 90%;
   margin-left: 2rem;
-  
+color: var(--white);  
 }
 
-.about-photo {
+
+/* ============================ SERVICE-AREA =========================== */
+#service-area {
   display: flex;
-  width: 225px;
-  height: 225px;
-  margin-left: 5rem;
-
+  flex-flow: column wrap;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
 }
+
+
 
 /* ---------------- Footer---------------- */
 footer .container {
