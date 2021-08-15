@@ -22,13 +22,15 @@
   <!-- Google Fonts -->
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 
 <!-- Font Awesome -->
-<script src="https://kit.fontawesome.com/e94e20fcad.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e94e20fcad.js" crossorigin="anonymous"></script>
   
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <meta name="theme-color" content="#fafafa">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="theme-color" content="#fafafa">
+   
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
@@ -37,24 +39,33 @@
         <div><img src="img/phone.png" alt="phone pic"></div>
             <!-- Top Navigation Menu -->
        <div class="topnav">
-            <a href="javascript:void(0);" style="font-size:35px;" class="icon" onclick="myFunction()">&#9776;</a>
-            <a href="#" class="active">Home</a>
-            <a href="services/index.html">Services</a>
+            <a href="#home" class="active"></a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="mylinks">
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+                <a href="#service-area">Service-area</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#about">About</a>
+
+            <!-- <a href="services/index.html">Services</a>
             <a href="#testimonials.html">Testimonials</a>
             <a href="#contact">Contact</a>
             <a href="service-area/index.html">Service-Area</a>
-            <a href="#about">About</a>
+            <a href="#about">About</a> -->
         </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
     </div>
 </header>
 <main>
     <section id="logo-message">
-        <div class="image">
-            <img src="img\Logo@2x.png" alt="Logo image">
-        </div>
-        <div class="message">
-            <p> Specializing in <br> Maintaining Dignity<br> Through In Home Care</p> 
+        <p> Specializing in <br> Maintaining Dignity<br> Through In Home Care</p> 
             </p>
+        <div class="logo-image">
+            <img src="img/cj-Logo.png" alt="Logo image">
         </div>
         <div class="para">
         <p>
@@ -96,7 +107,7 @@
             <img src="../img/Cecilia-Jacobs-Headshot.jpg" alt="">
         </div>
         <div class="about-para">
-            <p>I decide to venture out on my own and create a brand that offered personalized in home care for seniors. <br> <br> I am proud to say that since 2011 Cecilia Jacobs Home Healthcare has continued to provide quality services.
+            <p>"I take pride in making sure my clients receive the personalized in home care that I would expect in order to maintain dignity and independence in the comfort of their home." <br> <br> I am proud to say that since 2011 Cecilia Jacobs Home Healthcare has continued to provide quality services.
                  </p>
             </div>
     </section>
@@ -113,9 +124,8 @@
             <div><img src="img/map-marker-alt.svg" alt="map marker">Monterey</div>
             <div><img src="img/map-marker-alt.svg" alt="map marker">Soledad</div>
         </div>
-        </div>
         <div class="top">
-            <a href="#top">Back to Top</a>
+            <a href="#top" class="button">Home</a>
         </div>
     </section>
 </main>
@@ -125,16 +135,13 @@
              <h1>Contact Cecilia</h1>
             <div class="footer-items">
             <div>
-                <img src="" alt="">
-                <p>831-601-9933 </p>
+                <i class="fas fa-phone-square">831-601-9933</i>
             </div>
             <div>
-                <img src="" alt="">
-                <p>Cecilia@cjinhomecare.com</p>
+                <i class="far fa-envelope">Cecilia@cjinhomecare.com</i>
             </div>
             <div>
-                <img src="" alt="">
-                <p>Follow her on Facebook</p>
+                <i class="fab fa-facebook-square">Follow her on Facebook</i>
             </div>
         </div>
         </div>
@@ -148,11 +155,11 @@
   <script src="js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
+  <!-- <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
   </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script> -->
 </body>
 
 </html>
